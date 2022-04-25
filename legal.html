@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com -->
+  <title>Aplicaciones de la Inteligencia Artificial en Negocios - aplicai</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 400 15px sans-serif;
+    line-height: 1.8;
+    color: #000;
+  }
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-size: 18px;
+    line-height: 1.375em;
+    color: #000;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }  
+  .jumbotron {
+    background-color: #f4511e;
+    color: #fff;
+    padding: 100px 25px;
+    font-family: sans-serif;
+  }
+  .container-fluid {
+    padding: 60px 50px;
+  }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .logo-small {
+    color: #f4511e;
+    font-size: 50px;
+  }
+  .logo {
+    color: #f4511e;
+    font-size: 200px;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #f4511e;
+  }
+  .carousel-indicators li {
+    border-color: #f4511e;
+  }
+  .carousel-indicators li.active {
+    background-color: #f4511e;
+  }
+  .item h4 {
+    font-size: 18px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  .item span {
+    font-style: normal;
+  }
+  .panel {
+    border: 1px solid #f4511e; 
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid #f4511e;
+    background-color: #fff !important;
+    color: #f4511e;
+  }
+  .panel-heading {
+    color: #fff !important;
+    background-color: #f4511e !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+    background-color: white !important;
+  }
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+  .panel-footer .btn {
+    margin: 15px 0;
+    background-color: #f4511e;
+    color: #fff;
+  }
+  .navbar {
+    margin-bottom: 0;
+    background-color: #fff;
+    z-index: 9999;
+    border: 0;
+    min-height: 72px;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #f4511e !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #f4511e !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #f4511e !important;
+  }
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #f4511e;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="www.aplicai.com"><img src="images/logo.png" class="aplicai-logo" style="width:50%"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="www.aplicai.com/index.html#services">SOFTWARE</a></li>
+        <li><a href="www.aplicai.com/index.html#about">NOSOTROS</a></li>
+        <li><a href="www.aplicai.com/index.html#contact">CONTACTO</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <h1>Aplicaciones de la Inteligencia Artificial</h1> 
+  <p>en Negocios, Organizaciones...</p> 
+  <form action="https://formspree.io/f/xyyobzkb" method="POST">
+    <div class="input-group">
+      <input type="email" class="form-control" size="50" placeholder="correo electrónico" required>
+      <div class="input-group-btn">
+        <button type="submit" class="btn btn-danger">Subscribe</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+<!-- Container (Legal Section)-->
+<div id="legal" class="container-fluid">
+  <h1>Aviso Legal</h1>
+  <p>"aplicai" y "amulticloud" son marcas registradas por Aplicai Artificial Intelligence, S. L.</p>
+  <p>La información proporcionada a continuación está relacionada con el sitio web y los servicios ofrecidos en el mismo.</p>
+  <p>Si continúa navegando, entendemos que el usuario acepta las cláusulas mostradas a continuación.</p>
+  <p>Si no está de acuerdo con ellas, deberá abandonar el sitio web y abstenerse de acceder y utilizar los servicios ofrecidos en el mismo.</p>
+  <h2>TITULARIDAD</h2>
+  <p>La gestión y la titularidad del sitio web es de “Aplicai Artificial Intelligence, S. L.” (en adelante Aplicai), con Número de Identificación Fiscal B01767144, domicilio en Calle Franco de Medina 5, 38320 San Cristóbal de La Laguna, Santa Cruz de Tenerife (España), y dirección de correo-e: aviso(arroba)aplicai.com e inscrita en el Registro Mercantil de Santa Cruz de Tenerife, datos registrales: T 3686, F 133, S 8, H TF 64701, I/A 1 (23.07.20)</p>
+  <p>Todo el contenido, los datos, la información y cualquier material que se encuentre en el sitio web o sea accesible desde el mismo es titularidad de Aplicai, sus sucursales, filiales, licenciatarios y/o proveedores.</p>
+  <h2>CONDICIONES GENERALES DE USO</h2>
+  <p>Todos los productos y servicios prestados por Aplicai se encuentran sometidos a la legislación vigente.</p>
+  <ul><li>Por favor, lea atentamente las siguientes condiciones generales. Por el acceso a esta dirección y a cualquiera de sus páginas (en adelante, «la Web») usted tendrá consideración de usuario y se presume que acepta estas Condiciones Generales. El acceso a alguna de las páginas de esta Web puede estar limitado por las leyes y disposiciones de las distintas jurisdicciones de los países.</li><li>La información contenida en esta Web, incluida la relativa a ciertos productos y servicios, está destinada a su uso, básicamente, por particulares, compañías, sociedades, “trusts”, personas físicas o jurídicas o cualquier otra entidad (en adelante «Personas») con residencia en España o que accedan desde España, por lo que Aplicai declina toda responsabilidad por el acceso de Personas en jurisdicciones donde dicha distribución o uso pudieran ser contrarios a la normativa o regulación. Ciertos productos y servicios pueden no estar disponibles o autorizados en todas las jurisdicciones o para todas las Personas.</li></ul>
+  <h2>MARCAS REGISTRADAS</h2>
+  <p>amulticloud es una marca comercial registrada propiedad de Aplicai.</p>
+  <p>Las marcas comerciales de Aplicai y sus filiales no podrán utilizarse en relación con ningún producto o servicio que no sea de Aplicai.</p>
+  <p>El usuario no tendrá derecho a utilizar ninguna marca de Aplicai ni de ninguna otra entidad en virtud de su uso de este sitio.</p>
+  <p>No deberán usarse de ninguna forma que causare confusión entre los Clientes o de forma que desprestigie o desacredite a Aplicai y/o a sus sucursales o filiales.</p>
+  <p>Todas las demás marcas comerciales, marcas de servicio y logotipos utilizados en este sitio son marcas comerciales, marcas de servicio o logotipos de sus respectivos propietarios.</p>
+  <h2>RESPONSABILIDAD Y GARANTÍA DE APLICAI</h2>
+  <h3>CONTENIDOS</h3>
+  <p>Aplicai ha obtenido la información y los materiales incluidos en la Web de fuentes consideradas como fiables, pero, si bien se han tomado medidas razonables para asegurarse de que la Información contenida sea correcta, Aplicai no garantiza que sea exacta, completa, o actualizada y, consecuentemente, no debe confiarse en ella como si lo fuera. Aplicai declina expresamente cualquier responsabilidad por error u omisión en la Información contenida en las páginas de esta Web.</p>
+  <p>Aplicai se reserva el derecho a modificar, suspender, cancelar o restringir el contenido de la Web, los vínculos o la información obtenida a través de ella, sin necesidad de previo aviso.</p>
+  <p>En ningún caso, Aplicai, sus sucursales, y/o sus administradores, empleados y personal autorizado serán responsables de cualquier tipo de perjuicio, pérdidas, reclamaciones o gastos de ningún tipo, tanto si proceden como si no del uso de la Web, de la Información adquirida o accedida por o a través de ésta, de virus informáticos, de fallos operativos o de interrupciones en el servicio o transmisión, o fallos en la línea; el uso de la Web, tanto por conexión directa como por vínculo u otro medio, constituye un aviso a cualquier usuario de que estas posibilidades pueden ocurrir.</p>
+  <p>Queda prohibido transmitir o enviar a través de la Web cualquier contenido ilegal o ilícito, virus informáticos, o mensajes que, en general, afecten o violen derechos de Aplicai o de terceros.</p>
+  <p>Aplicai no se hace responsable de las webs no propias a las que se puede acceder mediante vínculos («links») o de cualquier contenido puesto a disposición por terceros. Cualquier uso de un vínculo o acceso a una web no propia es realizado por voluntad y riesgo exclusivo del usuario. Aplicai no recomienda ni garantiza ninguna información obtenida por o a través de un vínculo, ni se responsabiliza de ninguna pérdida, reclamación o perjuicio derivado del uso o mal uso de un vínculo, o de la información obtenida a través de él, incluyendo otros vínculos o webs, de la interrupción en el servicio o en el acceso, o del intento de usar o usar mal un vínculo, tanto al acceder a la Web, como al acceder a la información de otras webs desde la Web.</p>
+  <p>En algunas ocasiones, esta Web utiliza <strong>“cookies”</strong> propias y de terceros para mejorar nuestros servicios mediante el análisis de sus hábitos de navegación.</p>
+  <p>Las “cookies” son ficheros que se almacenan en el ordenador del usuario que navega a través de Internet y que, en particular, contiene un número que permite identificar unívocamente el ordenador del usuario, aunque éste cambie de localización o de dirección IP.</p>
+  <p>El sitio web es accesible sin necesidad de que las cookies estén activadas, si bien su desactivación puede impedir el correcto funcionamiento del mismo.</p>
+  <p>Si usted navega por el sitio web, entendemos que acepta su uso; recomendamos que lea atentamente nuestra <a href="cookies.html" title="Política de cookies">Política de cookies</a> para tener información detallada sobre las cookies que emplea este sitio web, las finalidades de su uso, así como el modo de oponerse o revocar su consentimiento al uso de las mismas.</p>
+  <h3>PROPIEDAD INDUSTRIAL E INTELECTUAL</h3>
+  <p>Esta web es propiedad de Aplicai. Los derechos de Propiedad Intelectual e Industrial y derechos de explotación y reproducción de esta Web, de sus páginas, pantallas, la información que contienen, su apariencia, estructura y diseño, código fuente, archivos de audio y software, así como los vínculos («hiperlinks») que se establezcan desde ella a otras páginas web de cualquier sociedad perteneciente a Aplicai, son propiedad, han sido cedidos o son objeto de licencia, a favor de Aplicai o de las empresas de Aplicai, salvo que se especifique otra cosa.</p>
+  <p>Todas las denominaciones, diseños y/o logotipos que componen este sitio son marcas debidamente registradas. Cualquier uso indebido de las mismas por persona diferente de su legítimo titular podrá ser perseguido de conformidad con la legislación vigente. Los derechos de propiedad intelectual y marcas de terceros están destacados convenientemente y deben ser respetados por todo aquel que acceda a la Web.</p>
+  <p>Solo para uso personal y privado se permite descargar los contenidos, copiar o imprimir cualquier página de esta Web.</p>
+  <p>Queda prohibido reproducir, comunicar públicamente, distribuir, ceder o transmitir, modificar o suprimir la información, contenido u advertencias de esta Web sin la previa autorización escrita de Aplicai</p>
+  <h2>LEGISLACIÓN APLICABLE</h2>
+  <p>Las presentes condiciones generales se regirán por la legislación española.</p>
+</div>
+
+<!-- Container (Privacy Section)-->
+<div id="privacy" class="container-fluid">
+  <h1>Información sobre Protección de Datos</h1>
+  <p>¿Quién es el responsable del tratamiento de sus datos?: Aplicai Artificial Intelligence, S. L. (en adelante “Aplicai”).</p>
+  <p>Dirección postal: Calle Franco de Medina 5, 38320 San Cristóbal de La Laguna, Santa Cruz de Tenerife.</p>
+  <p>Correo-e de contacto (Delegado de Protección de Datos/Oficina de Privacidad): dpo (arroba) aplicai.com</p>
+  <h2>¿Por qué y para qué tratamos sus datos personales?:</h2>
+  <p>A continuación, se detallan las distintas finalidades de tratamiento por parte de Aplicai:</p>
+  <p>a) Tratamientos realizados por el contrato. Son necesarios para la firma del contrato o la prestación del servicio que nos solicita.</p>
+  <p>Trataremos sus datos para informarle sobre la contratación de productos y servicios de Aplicai, para su contratación, así como para mantener y cumplir el contrato, evaluando para ello, cuando sea preciso, su solvencia y riesgo crediticio.</p>
+  <p>En el caso de que Usted hubiera hecho uso de la firma manuscrita digitalizada en su relación con Aplicai, para solicitar servicios y/o formalizar operaciones, le informamos de que conservaremos sus datos biométricos obtenidos mediante la digitalización de la firma manuscrita (como son el orden del trazo, la intensidad, la velocidad, la presión y la aceleración del grafo) y que exclusivamente serán tratados como elemento de prueba en caso de repudio, con objeto de verificar a través del cotejo que la firma es suya, y, por tanto, poder efectuar la autenticación del Cliente. En ningún caso, trataremos sus datos biométricos como medio de identificación.</p>
+  <p>Para cumplir el contrato, podremos acudir a fuentes de información externas, como diarios y boletines oficiales, registros públicos, resoluciones de las Administraciones Públicas, guías telefónicas, listas de personas pertenecientes a colegios profesionales, listas oficiales para la prevención del fraude, redes sociales e Internet.</p>
+  <p>b) Tratamientos realizados por su consentimiento. Siempre que haya prestado su consentimiento a través de la casilla habilitada al efecto en el formulario que pondríamos a su disposición.</p>
+  <ol><li>&nbsp;Desarrollo de acciones comerciales:<br>1.1. Trataremos sus datos para el desarrollo de acciones comerciales, así como la elaboración de un perfil comercial a partir de sus datos, para ofrecerle productos y/o servicios financieros distintos de los que tuviera contratados con Aplicai, felicitarle en fechas señaladas, incluirle en programas de fidelización y participar en sorteos organizados por Aplicai. Estas acciones comerciales podrán ser por cualquier medio, incluida la vía electrónica (correo electrónico, fax, SMS, redes sociales, aplicaciones móviles, etc.). Esta autorización existirá incluso una vez terminada su relación con Aplicai.<br>1.2. Trataremos sus datos para el desarrollo de acciones comerciales, tanto generales como ajustadas a su perfil comercial, para ofrecerle productos y/o servicios de empresas del Aplicai, empresas colaboradoras y/o participadas. Estas acciones comerciales podrán ser por cualquier medio, incluidos los electrónicos (correo electrónico, fax, SMS, redes sociales, aplicaciones móviles, etc.). Esta autorización existirá incluso una vez terminada su relación con Aplicai. Las empresas colaboradoras y/o participadas sobre cuyos productos podrán versar las acciones comerciales pertenecen a los siguientes sectores: seguros, gran consumo, formación, educación y cultura, hogar, salud y belleza, hotel y viajes, informática, telecomunicaciones y tecnología, automoción, servicios de asesoramiento, inmobiliario y construcción, ocio y tiempo libre, seguridad, textil y moda, restauración, alimentación-pesca y ganadería, agroalimentario, deporte, energético, reparación y mantenimiento, transporte, logística, administración, asesoría y consultoría, maquinaria y material de oficina, comercio, industria, sanitaria y servicios sociales.</li><li>Comunicaremos sus datos a empresas filiales de Aplicai, así como a empresas colaboradoras y/o participadas por Aplicai, para el desarrollo de acciones comerciales por parte de éstas, tanto generales como ajustadas a su perfil comercial, sobre sus productos y servicios o los de Aplicai. Estas acciones comerciales podrán ser por cualquier medio, tanto físicos como electrónicos (correo electrónico, fax, SMS, redes sociales, aplicaciones móviles, etc.). Podrá acceder al listado completo de sociedades a las que comunicaremos sus datos solicitándolo por correo electrónico a la dirección aviso (arroba) aplicai.com</li><li>Consultaremos sus datos a empresas que facilitan información sobre solvencia, morosidad y en general de indicadores de riesgo cuando le ofrezcamos financiación personalizada.</li></ol>
+  <p>En caso de que Usted no autorice el tratamiento de sus datos para las anteriores finalidades, ello no afectará al mantenimiento o cumplimiento de la relación contractual que mantiene con Aplicai.</p>
+  <p>c) Tratamientos realizados por interés legítimo</p>
+  <ol><li>Trataremos sus datos para el desarrollo de acciones comerciales, tanto generales como ajustadas a su perfil comercial, para ofrecerle productos o servicios de Aplicai similares a los que ya tenga contratados. Las acciones comerciales podrán ser por cualquier medio, incluidos los electrónicos (correo electrónico, fax, SMS, redes sociales, aplicaciones móviles, etc.).</li><li>Trataremos sus datos para realizar observaciones y recomendarle productos y servicios de Aplicai. En concreto, trataremos los movimientos transaccionales de los productos y/o servicios que Usted tenga contratados con Aplicai, así como los datos sobre su capacidad de ahorro y endeudamiento. Consultaremos la información que tengamos por la gestión de los servicios que le prestamos o de los productos que haya contratado o mantenga contratados en el último año.</li></ol>
+  <p>A estos efectos, solo podremos consultar la información procedente de empresas que facilitan información sobre solvencia, morosidad y, en general, de indicadores de riesgo, si Usted nos da su consentimiento a través de la casilla correspondiente del cuestionario.</p>
+  <p>Mediante los tratamientos anteriores, Aplicai persigue el interés legítimo de ofrecerle los productos y servicios que mejor se adapten a sus características personales, así como mejores condiciones en productos o servicios que haya contratado, o que pueda contratar en el futuro.</p>
+  <ol start="3"><li>Trataremos y/o comunicaremos sus datos a terceros, sean o no empresas de Aplicai, para prevenir, investigar y/o descubrir el fraude. El interés legítimo de Aplicai es conocer e identificar a los participantes en actividades fraudulentas para llevar a cabo las acciones que sean necesarias.</li><li>Grabaremos su voz y/o su imagen y conservaremos la conversación telefónica y/o vídeo, cuando se lo indiquemos de forma expresa. Los intereses legítimos de Aplicai son mantener la calidad del servicio y utilizar las grabaciones como prueba en juicio y fuera de él, en caso necesario.</li><li>Realizaremos procedimientos de anonimización, tras los cuales Aplicai ya no estará en disposición de identificarle. La finalidad de dichos procedimientos no es otra que utilizar la información anonimizada con fines estadísticos y para la elaboración de modelos de comportamiento.</li><li>Comunicaremos sus datos a otras empresas de Aplicai y terceras empresas participadas y/o empresas colaboradoras de Aplicai (a modo de ejemplo, entidades aseguradoras y gestoras de activos financieros), en caso de que Usted, en calidad de Cliente de Aplicai, lleve a cabo la contratación de alguno de los productos y/o servicios de dichas entidades que son comercializados por Aplicai. En este caso, la cesión afectará únicamente a un número limitado de datos meramente identificativos que Aplicai dispone sobre su persona; en concreto, los estrictamente necesarios para la celebración del contrato. Se pretende con ello simplificar y agilizar la contratación a través de Aplicai de los productos que éste comercializa de otras empresas del Grupo o de terceras empresas, habida cuenta de su condición de Cliente de Aplicai. Podrá acceder al listado completo de sociedades a las que comunicaremos sus datos solicitándolo por correo electrónico a la dirección aviso (arroba) aplicai.com</li><li>En el caso de producirse impagos por su parte, los mismos podrán ser comunicados a empresas de solvencia patrimonial, tales como Experian y/o ASNEF, cumpliendo los procedimientos y garantías que en cada momento establezca y le reconozca la legislación vigente. El interés legítimo de Aplicai es cumplir con un adecuado control y prevención de situaciones de impago, colaborando a la salvaguarda del sistema financiero y de la economía en general, en tanto permite el acceso a la información de solvencia a terceras entidades que requieran analizar la solvencia de los solicitantes de operaciones de riesgo.</li></ol>
+  <p>Podrá solicitar la oposición a cualquiera de los tratamientos anteriores basados en el interés legítimo y, en su caso, ejercer su derecho a no ser objeto de una decisión basada únicamente en el tratamiento automatizado. Para ello, debe dirigirse al Delegado de Protección de Datos/Oficina de Privacidad y debe explicar el motivo por el que se opone.</p>
+  <p>d) Tratamientos realizados para el cumplimiento de una obligación legal</p>
+  <p>Trataremos sus datos para cumplir las obligaciones legales y fiscales que resulten aplicables.</p>
+  <p>Asimismo, grabaremos cualquier conversación telefónica que finalice o pueda finalizar con el cierre de una operación de servicios profesionales. Estos tratamientos existirán incluso una vez terminada la relación contractual, si fuera preciso.</p>
+  <h2>¿Cómo obtenemos sus datos?:</h2>
+  <p>Aplicai obtiene sus datos por las siguientes fuentes:</p>
+  <ul><li>La información que Usted nos facilita cuando contrata y mantiene productos y/o servicios con nosotros, tanto de forma directa como indirecta. Algunos ejemplos son: a través de consultas, transacciones, operaciones o solicitudes de contratos.</li><li>Fuentes de información externas, como diarios y boletines oficiales, registros públicos, resoluciones de las Administraciones Públicas, guías telefónicas, listas de personas pertenecientes a colegios profesionales, listas oficiales para la prevención del fraude, redes sociales e Internet, así como terceras empresas a las que Ud. haya prestado su consentimiento para la cesión de sus datos a entidades de crédito, financieras y de seguros.</li><li>En particular, los datos que trataremos incluyen las siguientes categorías: datos de carácter identificativo, datos referentes a sus características personales y circunstancias sociales, datos académicos y profesionales, información comercial.</li><li>Empresas que facilitan información sobre solvencia, morosidad y en general de indicadores de riesgo financiero o de crédito.</li><li>En particular, los datos que trataremos incluyen las siguientes categorías: Datos de carácter identificativo, datos económicos, financieros y de solvencia; y datos referentes a transacciones de bienes y servicios.</li></ul>
+  <h2>¿Durante cuánto tiempo conservaremos sus datos?:</h2>
+  <p>Trataremos sus datos personales mientras sean necesarios para la finalidad para la cual fueron recabados. Si cancela todos los contratos, usted podrá:</p>
+  <ul><li>Mantener el consentimiento para desarrollar acciones comerciales: trataremos sus datos para las acciones comerciales que haya consentido. Consideraremos que ha elegido esta opción si no revoca el consentimiento expresamente.</li><li>Revocar el consentimiento para desarrollar acciones comerciales: cancelaremos sus datos mediante el bloqueo de los mismos. Con este bloqueo, Aplicai no tendrá acceso a sus datos y solo los tratará para su puesta a disposición a las Administraciones Públicas competentes, Jueces y Tribunales o el Ministerio Fiscal, para la atención de las posibles responsabilidades relacionadas con el tratamiento de los datos, en particular para el ejercicio y defensa de reclamaciones ante la Agencia Española de Protección de Datos. Conservaremos sus datos bloqueados durante los plazos previstos en las disposiciones aplicables o, en su caso, en las relaciones contractuales mantenidas con Aplicai, procediendo a la supresión física de sus datos una vez transcurridos dichos plazos.</li></ul>
+  <h2>¿Quiénes recibirán sus datos?:</h2>
+  <p>Comunicamos sus datos personales a:</p>
+  <ul><li>Empresas de Aplicai con estas finalidades:<ul><li>Desarrollar acciones comerciales de sus productos y servicios o de los de Aplicai, tanto generales como ajustadas a su perfil comercial.</li><li>Contratar productos o servicios de dichas entidades.</li><li>Cumplir obligaciones legales.</li></ul></li><li>Organismos Públicos, Agencia Tributaria, Jueces y Tribunales y, en general, Autoridades competentes, cuando Aplicai tenga la obligación legal de facilitarlos.</li><li>Empresas colaboradoras y/o participadas por Aplicai, con las siguientes finalidades:<ul><li>Desarrollar acciones comerciales de sus productos y servicios o de los de Aplicai, tanto generales como ajustadas a su perfil comercial.</li><li>Contratar productos y/o servicios de dichas entidades.</li></ul></li><li>En el caso de producirse impagos por su parte, los mismos podrán ser comunicados a empresas de solvencia patrimonial, tales como Experian y/o ASNEF, cumpliendo los procedimientos y garantías que en cada momento establezca y le reconozca la legislación vigente.</li><li>Al margen de las anteriores comunicaciones de datos, Aplicai cuenta con la colaboración de algunos terceros proveedores de servicios que tienen acceso a sus datos personales y que tratan los referidos datos en nombre y por cuenta de Aplicai como consecuencia de su prestación de servicios.</li></ul>
+  <p>Aplicai sigue unos criterios estrictos de selección de proveedores de servicios con el fin de dar cumplimiento a sus obligaciones en materia de protección de datos y se compromete a suscribir con ellos el correspondiente contrato de tratamiento de datos mediante el que les impondrá, entre otras, las siguientes obligaciones: aplicar medidas técnicas y organizativas apropiadas; tratar los datos personales para las finalidades pactadas y atendiendo únicamente a las instrucciones documentadas de Aplicai; y suprimir o devolver los datos a Aplicai una vez finalice la prestación de los servicios.</p>
+  <p>En concreto, Aplicai contratará la prestación de servicios por parte de terceros proveedores que desempeñan su actividad, a título enunciativo y no limitativo, en los siguientes sectores: servicios de logística, asesoramiento jurídico, servicios privados de tasación, homologación de proveedores, empresas de servicios profesionales multidisciplinares, empresas relacionadas con el mantenimiento, empresas proveedoras de servicios tecnológicos, empresas proveedoras de servicios informáticos, empresas de seguridad física, prestadores de servicios de mensajería instantánea, empresas de gestión y mantenimiento de infraestructuras y empresas de servicios de centro de llamadas.</p>
+  <h2>¿Cuáles son sus derechos cuando nos facilita sus datos?:</h2>
+  <p>Usted podrá ejercer sus derechos de acceso, portabilidad, rectificación, supresión, limitación, oposición, y a no ser objeto de una decisión basada únicamente en el tratamiento automatizado. Asimismo, usted podrá revocar en cualquier momento el consentimiento prestado.</p>
+  <p>Para ejercer los referidos derechos, deberá enviar un correo electrónico a dpo (arroba) aplicai.com o dirigirse por correo postal a Calle Franco de Medina 5, 38320 San Cristóbal de La Laguna, Santa Cruz de Tenerife, aportando en todo caso copia de su DNI o de documento oficial que le identifique.</p>
+  <h2>¿Ante quién puede ejercitar sus reclamaciones relacionadas con protección de datos?:</h2>
+  <p>Usted podrá dirigirse siempre al Delegado de Protección de Datos/Oficina de Privacidad de Aplicai.</p>
+  <p>También podrá presentar una reclamación ante la Agencia Española de Protección de Datos, si está en desacuerdo con la respuesta que haya recibido de Aplicai. Dispone de la información necesaria en su web:&nbsp;www.aepd.es</p>
+  <br>
+  <p>Última edición: 25 de abril de 2022</p>
+</div>
+
+<!-- Image of location/map -->
+<img src="images/canary.jpg" class="canary-image w3-greyscale-min" style="width:100%" title="Fuente: Agencia Espacial Europea - ESA (European Space Agency)">
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+
+  <img src="images/gobcan.png" class="gobcan" style="width:100%">
+  <p>&copy;2020-2022 Aplicai Artificial Intelligence, SL - Todos los derechos reservados &nbsp; &nbsp; - &nbsp; &nbsp; Aviso Legal &nbsp; &nbsp; - &nbsp; &nbsp; <a href="#privacy" title="Privacidad">Privacidad</a> &nbsp; &nbsp; - &nbsp; &nbsp; <a href="cookies.html" title="Política de cookies">Política de cookies</a></p><br>
+  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a><br>Glyphicon Halflings set by <a href="http://glyphicons.com/" title="Glyphicons">glyphicons.com</a></p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>
