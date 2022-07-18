@@ -22,7 +22,20 @@
     line-height: 1.8;
     color: #000;
   }
-  h2 {
+  h1 {
+    font-size: 60px;
+    color: #000;
+    font-family: Helvetica,sans-serif;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }  h2 {
+    font-size: 36px;
+    color: #000;
+    font-family: Helvetica,sans-serif;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  h3 {
     font-size: 24px;
     text-transform: uppercase;
     color: #000;
@@ -40,7 +53,6 @@
     background-color: #f4511e;
     color: #fff;
     padding: 100px 25px;
-    font-family: sans-serif;
   }
   .container-fluid {
     padding: 60px 50px;
@@ -129,7 +141,6 @@
     background-color: #fff;
     z-index: 9999;
     border: 0;
-    min-height: 72px;
     font-size: 12px !important;
     line-height: 1.42857143 !important;
     letter-spacing: 4px;
@@ -138,6 +149,7 @@
   }
   .navbar li a, .navbar .navbar-brand {
     color: #f4511e !important;
+    padding: 30px 15px;
   }
   .navbar-nav li a:hover, .navbar-nav li.active a {
     color: #fff !important;
@@ -202,13 +214,8 @@
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#myPage"><img src="images/logo.png" class="aplicai-logo" style="width:50%"></a>
-    </div>
+      <a class="navbar-brand" href="#myPage"><img src="images/logo.png" class="aplicai-logo" style="width:50%" alt="Aplicai Artificial Intelligence" title="AI Power to your Business."></a>
+  </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#services">SOFTWARE</a></li>
@@ -221,7 +228,7 @@
 
 <div class="jumbotron text-center">
   <h1>Aplicaciones de la Inteligencia Artificial</h1> 
-  <p>AI Power to your Business.</p> 
+  <h2>AI Power to your Business.</h2> 
   <form action="https://formspree.io/f/xyyobzkb" method="POST">
     <div class="input-group">
       <input type="email" class="form-control" size="50" placeholder="correo electrónico" required>
@@ -234,7 +241,7 @@
 
 <!-- Container (Services Section) -->
 <div id="services" class="container-fluid text-center">
-  <h2>Software</h2>
+  <h3>Software</h3>
   <h4>Dónde estamos haciendo la diferencia:</h4>
   <br>
   <div class="row slideanim">
@@ -260,7 +267,7 @@
 <div id="about" class="container-fluid">
   <div class="row">
     <div class="col-sm-8">
-      <h2 class="text-center">Nosotros</h2><br>
+      <h3 class="text-center">Nosotros</h3><br>
       <h4>Trabajamos con distintos enfoques del Conocimiento: ingenieros informáticos, profesionales de la gerencia, sociólogos, expertos en marketing o recursos humanos, entre otros.</h4><br>
       <p>Dentro de la Inteligencia Artificial (IA) hemos puesto foco en el aprendizaje automático (o "machine learning") y en los aspectos éticos de la IA.</p>
       <p>En aprendizaje automático, actualmente trabajamos en técnicas de aprendizaje sin supervisión (o "unsupervised learning").</p>
@@ -278,7 +285,7 @@
       <span class="glyphicon glyphicon-signal logo"></span>
     </div>
     <div class="col-sm-8">
-      <h2 class="text-center">Criterios</h2>
+      <h3 class="text-center">Criterios</h3>
       <h3><strong>Por una IA ética:</strong></h3>
       <h4>A medida que las decisiones que toman las IA influyen e impactan cada vez más en la vida de las personas a toda escala, aumenta la responsabilidad de las empresas en gestionar las posibles implicaciones éticas y sociotécnicas de la adopción de la IA. (<a href="https://www.accenture.com/us-en/insights/artificial-intelligence/responsible-ai-principles-practice" title="Responsible AI: Accenture">clic para saber más</a>)</h4>
       <p><strong>Pensando en las personas:</strong> En la última década, con la disponibilidad de grandes conjuntos de datos y más potencia de cálculo, los sistemas de aprendizaje automático han alcanzado un rendimiento (sobre)humano en una amplia variedad de tareas.</p>
@@ -292,7 +299,7 @@
 
 <!-- Container (Contact Section) -->
 <div id="contact" class="container-fluid bg-grey">
-  <h2 class="text-center">Contacto</h2>
+  <h3 class="text-center">Contacto</h3>
   <div class="row">
     <div class="col-sm-5">
       <p>Contacte con nosotros y le responderemos en 24 horas.</p>
@@ -328,8 +335,8 @@
   <a href="#myPage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
-
-  <img src="images/gobcan.png" class="gobcan" style="width:100%">
+  <p>&nbsp;</p>
+  <img src="images/gobcan.png" class="gobcan" style="width:50%" alt="Gobierno de Canarias" title="Gobierno de Canarias">
   <p>&copy;2020-2022 Aplicai Artificial Intelligence, SL - Todos los derechos reservados &nbsp; &nbsp; - &nbsp; &nbsp; <a href="legal.html" title="Aviso Legal">Aviso Legal</a> &nbsp; &nbsp; - &nbsp; &nbsp; <a href="legal.html#privacy" title="Privacidad">Privacidad</a> &nbsp; &nbsp; - &nbsp; &nbsp; <a href="cookies.html" title="Política de cookies">Política de cookies</a></p><br>
   <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a><br>Glyphicon Halflings set by <a href="http://glyphicons.com/" title="Glyphicons">glyphicons.com</a></p>
 </footer>
