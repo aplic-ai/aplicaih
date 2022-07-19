@@ -142,14 +142,12 @@
     z-index: 9999;
     border: 0;
     font-size: 12px !important;
-    line-height: 1.42857143 !important;
-    letter-spacing: 4px;
+    letter-spacing: 5px;
     border-radius: 0;
     font-family: sans-serif;
   }
   .navbar li a, .navbar .navbar-brand {
     color: #f4511e !important;
-    padding: 30px 15px;
   }
   .navbar-nav li a:hover, .navbar-nav li.active a {
     color: #fff !important;
@@ -211,33 +209,33 @@
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
       <a class="navbar-brand" href="#myPage"><img src="images/logo.png" class="aplicai-logo" style="width:50%" alt="Aplicai Artificial Intelligence" title="AI Power to your Business."></a>
-  </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#services">SOFTWARE</a></li>
-        <li><a href="#about">NOSOTROS</a></li>
-        <li><a href="#contact">CONTACTO</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<div class="jumbotron text-center">
-  <h1>Aplicaciones de la Inteligencia Artificial</h1> 
-  <h2>AI Power to your Business.</h2> 
-  <form action="https://formspree.io/f/xyyobzkb" method="POST">
-    <div class="input-group">
-      <input type="email" class="form-control" size="50" placeholder="correo electrónico" required>
-      <div class="input-group-btn">
-        <button type="submit" class="btn btn-danger">Subscribe</button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="nav navbar-nav navbar-right">
+        <li class="nav-item"><a href="#services">SOFTWARE</a></li>
+        <li class="nav-item"><a href="#about">NOSOTROS</a></li>
+        <li class="nav-item"><a href="#contact">CONTACTO</a></li>	
+        </ul>
       </div>
     </div>
-  </form>
-</div>
+  </nav>
+
+<nav class="jumbotron text-center">
+  <div class="container-fluid">
+    <h1>Aplicaciones de la Inteligencia Artificial</h1> 
+    <h2>AI Power to your Business.</h2> 
+    <form action="https://formspree.io/f/xyyobzkb" method="POST">
+      <div class="input-group">
+        <input type="email" class="form-control" size="50" placeholder="correo electrónico" required>
+        <div class="input-group-btn">
+          <button type="submit" class="btn btn-danger">Subscribe</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</nav>
 
 <!-- Container (Services Section) -->
 <div id="services" class="container-fluid text-center">
