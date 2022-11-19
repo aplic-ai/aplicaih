@@ -23,40 +23,31 @@
     color: #000;
   }
   body {
-    font-size: 14px;
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.8;
   }
   h1 {
-    font-size: 60px;
     font-size: 6.0rem;
     font-weight: bold;
-    margin-bottom: 5%;
   }  
   h2 {
-    font-size: 36px;
     font-size: 3.6rem;
     font-weight: bold;
-    margin-bottom: 5%;
   }
   h3 {
-    font-size: 24px;
     font-size: 2.4rem;
     text-transform: uppercase;
     font-weight: 600;
-    margin-bottom: 5%;
   }
   h4 {
-    font-size: 18px;
     font-size: 1.8rem;
     line-height: 1.375em;
-    margin-bottom: 5%;
   }  
   .jumbotron {
     background-color: #f4511e;
     color: #fff;
-    padding: 5% 5%;
+    padding: 10% 5% 5% 5%;
   }
   .container-fluid {
     padding: 60px 50px;
@@ -66,12 +57,10 @@
   }
   .logo-small {
     color: #f4511e;
-    font-size: 50px;
     font-size: 5.0rem;
   }
   .logo {
     color: #f4511e;
-    font-size: 200px;
     font-size: 20.0rem;
   }
   .thumbnail {
@@ -95,7 +84,6 @@
     background-color: #f4511e;
   }
   .item h4 {
-    font-size: 18px;
     font-size: 1.8rem;
     line-height: 1.375em;
     font-style: italic;
@@ -131,12 +119,10 @@
     background-color: white !important;
   }
   .panel-footer h3 {
-    font-size: 32px;
     font-size: 3.2rem;
   }
   .panel-footer h4 {
     color: #aaa;
-    font-size: 14px;
     font-size: 1.4rem;
   }
   .panel-footer .btn {
@@ -149,7 +135,6 @@
     background-color: #fff;
     z-index: 9999;
     border: 0;
-    font-size: 12px !important;
     font-size: 1.2rem !important;
     letter-spacing: 5px;
     border-radius: 0;
@@ -167,7 +152,6 @@
     color: #f4511e !important;
   }
   footer .glyphicon {
-    font-size: 20px;
     font-size: 2.0rem;
     margin-bottom: 20px;
     color: #f4511e;
@@ -211,9 +195,8 @@
     }
   }
   @media screen and (max-width: 480px) {
-    .logo {
-      font-size: 150px;
-      font-size: 15.0rem;
+    .jumbotron {
+    padding: 30% 5% 5% 5%;
     }
   }
   </style>
@@ -222,7 +205,9 @@
 
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#myPage"><img src="images/logo.png" class="aplicai-logo" width="auto" height="24" alt="Aplicai Artificial Intelligence" title="AI Power to your Business."></a>
+      <a class="navbar-left" href="#myPage">
+        <img src="images/logo.png" class="img-fluid" alt="Aplicai Artificial Intelligence" title="AI Power to your Business.">
+      </a>
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
           <span class="icon-bar"></span>
@@ -237,26 +222,24 @@
         <li class="nav-item"><a href="#contact">CONTACTO</a></li>	
         </ul>
       </div>
+    </div>
   </nav>
 
 <nav class="jumbotron text-center">
-  <div class="row">
-    <div class="col-sm-4"><img class="img-responsive" src="images/logo.png" alt="Aplicai Artificial Intelligence" title="AI Power to your Business."></div>
-    <div class="col-sm-8">
-      <h1>Aplicaciones de la Inteligencia Artificial</h1>
-      <h2>AI Power to your Business.</h2>
-      <form action="https://formspree.io/f/xyyobzkb" method="POST">
-        <div class="input-group">
-        <input type="email" class="form-control" size="50" placeholder="correo electrónico" required>
-          <div class="input-group-btn">
-            <button type="submit" class="btn btn-danger">Subscribe</button>
-          </div>
-        </div>
-      </form>        
+  <h1>Aplicaciones de la Inteligencia Artificial</h1>
+  <h2>AI Power to your Business.</h2>
+  <form action="https://formspree.io/f/xyyobzkb" method="POST">
+    <div class="input-group">
+      <input type="email" class="form-control" size="50" placeholder="correo electrónico" required>
+      <div class="input-group-btn">
+        <button type="submit" class="btn btn-danger">Subscribe</button>
+      </div>
     </div>
-  </div>
+  </form>        
 </nav>
-
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/reUZRyXxUs4"></iframe>
+</div>
 <!-- Container (Services Section) -->
 <div id="services" class="container-fluid text-center">
   <h3>Software</h3>
